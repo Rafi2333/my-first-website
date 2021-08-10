@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element</title>
+     <style>
+         h1::before{
+             content:"Hello ";
+             color: burlywood;
+             font-size: 20px;
+             background-color: gray;
+         }
+         .special-effect::after{
+             content:" Bye" ;
+             font-size: 15px;
+             background-color: red;
+         }
+            body {
+            counter-reset: section;                       /* Set a counter named 'section', and its initial value is 0. */
+         }
+
+         p::before {
+         counter-increment: section;                   /* Increment the value of section counter by 1 */
+         content: "name " counter(section) ": ";    /* Display the word 'Section ', the value of
+                                                   section counter, and a colon before the content
+                                                   of each h3 */
+         }
+     </style>
+</head>
+<body>
+    <h1>Pseudo Class</h1>
+    <h1 class="special-effect">Normal Class</h1>
+    <h1 class="special-effect">Vodro class</h1>
+    <input name="email" type="text">
+    <br>
+    <input name="password" type="text">
+    <br>
+    <a href="https://www.youtube.com/">youtube</a>
+    <br>
+    <a href="https://thedailycampus.com/admission-test/110">Admission news</a>
+    
+        <p>alia</p>
+        <p>dalia</p>
+        <p>malia</p>
+        <p>kalia</p>
+        <p>calia</p>
+        <p>palia</p>
+        <p>kalaia</p>
+   
+</body>
+</html>
